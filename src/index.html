@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; media-src 'self' file:; style-src 'self' 'unsafe-inline'; script-src 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decibel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <div class="brand"><span class="brand-dial"></span>Decibel</div>
+    <nav class="nav">
+      <button class="nav-item" data-nav="library">Songs</button>
+      <button class="nav-item" data-nav="liked">Liked Songs</button>
+    </nav>
+    <div class="side-head"><span>Playlists</span><button class="icon-btn" id="newPlaylist" title="New playlist">+</button></div>
+    <div id="playlistList" class="pl-list"></div>
+    <div class="side-foot">
+      <div id="swatches" class="swatches"></div>
+      <button class="link-btn" id="openFolder">Open music folder</button>
+      <button class="link-btn" id="changeFolder">Change music folder</button>
+    </div>
+  </aside>
+  <main id="main">
+    <header id="topbar">
+      <div class="search"><input id="search" type="search" placeholder="Search your songs" autocomplete="off" spellcheck="false"></div>
+      <select id="librarySort" title="Sort songs"></select>
+      <button class="pill" id="importBtn">Import</button>
+    </header>
+    <section id="view"></section>
+  </main>
+  <aside id="queuePanel" hidden></aside>
+  <footer id="player">
+    <div class="np">
+      <div class="np-art" id="npArt"></div>
+      <div class="np-text"><div class="np-title" id="npTitle">Nothing playing</div><div class="np-artist" id="npArtist"></div></div>
+      <button class="icon-btn" id="npLike" title="Like">&#9825;</button>
+    </div>
+    <div class="transport">
+      <div class="buttons">
+        <button class="icon-btn" id="btnShuffle" title="Shuffle">&#8645;</button>
+        <button class="icon-btn" id="btnPrev" title="Previous">&#9198;</button>
+        <button class="play-btn" id="btnPlay" title="Play"></button>
+        <button class="icon-btn" id="btnNext" title="Next">&#9197;</button>
+        <button class="icon-btn" id="btnRepeat" title="Repeat">&#8635;</button>
+      </div>
+      <div class="seek"><span id="tCur">0:00</span><input type="range" id="seek" min="0" max="1000" value="0"><span id="tDur">0:00</span></div>
+    </div>
+    <div class="extra">
+      <button class="icon-btn" id="btnQueue" title="Queue">&#9776;</button>
+      <input type="range" id="volume" min="0" max="100" value="80" title="Volume">
+    </div>
+  </footer>
+  <div id="menu" class="menu" hidden></div>
+  <div id="modalRoot" hidden></div>
+  <div id="toast" class="toast" hidden></div>
+  <div id="dropOverlay" hidden><div>Drop songs and pictures to import</div></div>
+</div>
+<audio id="audio" preload="metadata"></audio>
+<script src="app.js"></script>
+</body>
+</html>
