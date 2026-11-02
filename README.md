@@ -50,7 +50,10 @@ Things to know:
 
 ## Using it
 
-- Double-click a song to play. Right-click a song (or use the three dots) for Play next, Add to queue, Add to playlist, Edit details, Choose artwork and Remove.
-- Playlists: the + in the sidebar. In a playlist choose Custom order and drag rows to reorder. Right-click a playlist to rename, change the cover or delete it.
-- Queue: the list button at the bottom right. Drag to reorder, click to jump, Shuffle next or Clear.
-- Media keys (play/pause, next, previous) work even when the window is in the background. Space toggles play when the window is focused.
+The layout copies the iPhone app: Your Library with Songs and Downloaded chips, search, a sort row, the Liked Songs and Add songs tiles, a mini player above a Songs and Playlists tab bar, and a Now Playing sheet.
+
+- Click a song to play it. Click the three dots (or right-click) for Play next, Add to queue, Add to playlist, Edit details, Choose artwork and Remove.
+- Click the mini player to open Now Playing. The list button at the bottom right opens the queue: drag to reorder, click to jump, Shuffle next or Clear.
+- Playlists tab: New playlist, then open one and use Reorder to drag songs into place (the sort switches to Custom order). The three dots at the top of a playlist rename it, change its cover or delete it.
+- The palette button changes the accent color, and it is saved to `skin_settings.json` for the iPhone app too.
+- Media keys (play/pause, next, previous) work even when the window is in the background. Space toggles play when you aren't typing.

@@ -16,14 +16,20 @@
   "build": {
     "appId": "com.anuragmallick.decibel",
     "productName": "Decibel",
-    "files": ["src/**/*", "package.json"],
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
     "win": {
       "icon": "build/icon.png",
-      "target": ["nsis"]
+      "target": [
+        "nsis"
+      ]
     },
     "nsis": {
       "oneClick": true,
-      "perMachine": false
+      "perMachine": false,
+      "artifactName": "Decibel-Setup-${version}.exe"
     }
   }
 }
