@@ -1,6 +1,6 @@
 {
   "name": "decibel-windows",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Decibel for Windows. Shares its music folder with the iPhone app.",
   "main": "src/main.js",
   "author": "Anurag Mallick",
